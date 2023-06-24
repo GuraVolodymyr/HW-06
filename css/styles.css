@@ -525,7 +525,10 @@ p {
 .footer-subscriber {
   margin-left: 80px;
 }
-
+.form-footer{
+  display: flex;
+  gap: 24px;
+}
 .footer-subscriber-item {
   display: flex;
 }
