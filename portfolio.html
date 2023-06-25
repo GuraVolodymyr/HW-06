@@ -301,18 +301,19 @@
       </div>
       <!-- Footer subscribe section -->
       <div class="footer-subscriber">
-        <form action="">
-          <p class="footer-social-text">Subscribe</p>
-          <div class="footer-subscriber-item">
-            <input class="footer-input" type="email" name="footer_email" placeholder="E-mail" />
+        <p class="footer-social-text">Subscribe</p>
+        <form action="/" class="form-footer">
+          <label class="footer-label visually-hidden">
+            <input class="footer-input" id="footer-email" type="email" name="footer--email" placeholder="E-mail" />
+          </label>
+            <button class="footer-subscribe-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-subscribe"></use>
+              </svg>
+            </button>
         </form>
-        <button class="footer-subscribe-btn" type="submit">Subscribe
-          <svg class="footer-btn-icon" class="" width="24" height="24">
-            <use href="./images/icons.svg#icon-footer-subscribe"></use>
-          </svg>
-        </button>
       </div>
-    </div>
     </div>
   </footer>
   </body>
