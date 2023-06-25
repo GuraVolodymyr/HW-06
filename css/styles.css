@@ -703,7 +703,7 @@ p {
 
 /* Modal */
 .backdrop {
-  padding: 72px 24px 24px;
+  padding: 72px 24px 24px 24px;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -824,9 +824,9 @@ p {
   display: block;
   margin-bottom: 4px;
   line-height: 1.17;
-  background-color: transparent;
+  /* background-color: transparent;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .modal-input {
   width: 100%;
@@ -835,7 +835,9 @@ p {
   border-radius: 4px;
   padding-left: 38px;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 .modal-input:focus {
   border: 1px solid #4d5ae5;
@@ -860,6 +862,9 @@ p {
   position: relative;
   margin-bottom: 8px;
   display: block;
+}
+.modal-comment-wrap{
+  margin-bottom: 16px;
 }
 .modal-comment {
   width: 100%;
@@ -894,6 +899,9 @@ p {
   border: 1px solid #4d5ae5;
   outline: none;
 }
+.checkbox-wrap{
+margin-bottom: 24px;
+}
 .check-text {
   display: flex;
   align-items: center;
@@ -904,6 +912,21 @@ p {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.privacy-span{
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-text span {
   width: 16px;
