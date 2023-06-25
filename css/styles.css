@@ -903,8 +903,8 @@ p {
 margin-bottom: 24px;
 }
 .check-text {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
