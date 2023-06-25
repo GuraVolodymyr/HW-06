@@ -482,6 +482,7 @@ p {
   margin-bottom: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-size: 16px;
 }
 
 .footer-logo-link {
@@ -523,36 +524,39 @@ p {
 }
  /* Footer SUB */
 .footer-subscriber {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .form-footer{
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 .footer-subscriber-item {
   display: flex;
 }
 .footer-input {
-  border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: none;
-  display: block;
+  
   width: 264px;
   height: 40px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   font-size: 12px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding-left: 16px;
+  background-color: transparent;
+
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-input::placeholder {
   color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 .footer-subscribe-btn {
   margin-left: 24px;
@@ -563,14 +567,14 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   background-color: var(--button-text-collor);
   color: #ffffff;
   width: 165px;
   height: 40px;
   border: none;
   border-radius: 4px;
-  padding: 0;
+  padding: 8px 24px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
